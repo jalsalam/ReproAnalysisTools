@@ -8,6 +8,8 @@ Organizing thoughts on tools and approaches for reproducible analyses
 - "Excuse Me, Do You Have a Minute To Talk About Version Control"
 - Ben Marwick `rrtools`
 - Will Landau `drake`
+- [ropensci post: "Tackling the Research Compendium at runconf17"](https://ropensci.org/blog/2017/06/20/checkers/) 
+- [rrrpkg](https://github.com/ropensci/rrrpkg)
 - ropensci unconf summary google doc from Hadley
 - Jenny Bryan: "What They Forgot to Teach You" rstudioconf 2018 tutorial
 - Jenny Bryan: "Workflow vs. Script" blog post

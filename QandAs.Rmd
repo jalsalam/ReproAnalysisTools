@@ -1,0 +1,44 @@
+---
+title: "Q&As"
+author: "Jameel Alsalam"
+date: "June 6, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Questions (and Answers?)
+
+1) Can an analysis package have a different name from the Github repo/local folder/RStudio .Rproj file?
+
+YES! See discussion [here](https://community.rstudio.com/t/analysis-package-naming-or-can-package-name-differ-from-rproj-name/9421/2)
+
+So far, I do not know of any pitfalls. To accomplish this, you are going to have to set up the package infrastructure manually, because the shims do checks that error. You can also manually rename the .Rproj and folder temporarily, and then name them back.
+
+
+2) How do you test analysis results?
+
+`testthat::expect_known_value` is useful for looking for changes in .rda files stored in /data directory. It will create a "known" version at a location you specify, which should probably be in the test directory. Although I guess by default this doesn't add a lot, since you can see the file changed in git already.
+
+
+3) Simplest "build system"?
+
+(subquestion: ways to figure out if files/objects are invalidated)
+
+4) What should you put under version control? (intermediate results? final results?)
+
+(what are the merge problems that result if you put binary files under VC?)
+
+
+
+5) Where to store larger data that you don't want under version control?
+
+
+
+6) If you store larger data externally or in authenticated locations, how should collaborators set up the authentication? Is this a job for a .Rprofile file?
+
+
+7) Tips for turning analysis scripts into functions.
+
